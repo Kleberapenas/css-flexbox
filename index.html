@@ -10,12 +10,25 @@
 <body>
     <h1 class="titulo">Propriedades Flexbox</h1>
     <hr>
+
+    <nav class="menu-navegacao">
+        <ul>
+            <li class="link-menu-principal"><a href="#display">display</a></li>
+            <li class="link-menu-principal"><a href="#flex-direction">flex-direction</a></li>
+            <li class="link-menu-principal"><a href="#justify-content">justify-content</a></li>
+            <li class="link-menu-principal"><a href="#align-items">align-items</a></li>
+            <li class="link-menu-principal"><a href="#flex-wrap">flex-wrap</a></li>
+            <li class="link-menu-principal"><a href="#flex-flow">flex-flow</a></li>
+            <li class="link-menu-principal"><a href="#align-content">align-content</a></li>
+        </ul>
+    </nav>
+    <hr>
     
-    <h1>1- Display: Ativa o Flexbox</h1>
+    <h1 id="#display">1- Display: Ativa o Flexbox</h1>
     <h2>display: flex</h2>
     <hr>
 
-    <h1>2 - Flexdirection: define a direção do eixo principal</h2>
+    <h1 id="flex-direction">2 - Flexdirection: define a direção do eixo principal</h2>
 
     <h2>Flex-direction:row</h2>
     <main class="container">
@@ -45,7 +58,7 @@
         <div class="blocos" style="background-color: blanchedalmond;">3</div>
     </main>
 
-    <h1 class="titulo">3 - justify-content: alinha os objetos do eixo principal</h1>
+    <h1 class="titulo" id="justify-content">3 - justify-content: alinha os objetos do eixo principal</h1>
 
     <h2>justify-content:center</h2>
     <main class="container" style="flex-direction: row; justify-content: center;">
@@ -89,7 +102,7 @@
         <div class="blocos" style="background-color: blanchedalmond;">3</div>
     </main>
 
-    <h1>4-Align-items: alinhar os elementos no eixo perpendicular</h1>
+    <h1 id="align-items">4-Align-items: alinhar os elementos no eixo perpendicular</h1>
 
     <h2>align-items: center</h2>
     <main class="container" style="align-items: center; height: 500px;">
@@ -126,7 +139,7 @@
         <div class="blocos" style="background-color: blanchedalmond; font-size: 100px;">3</div>
     </main>
 
-    <h1>5-Flex-wrap: decide se os elementos vão se os elementos são esprimidos ou não</h1>
+    <h1 id="flex-wrap">5-Flex-wrap: decide se os elementos vão se os elementos são esprimidos ou não</h1>
 
     <h2>flex-wrap: nowrap</h2>
     <main class="container" style="height: 500px; flex-wrap: nowrap; padding: 0px;">
@@ -176,13 +189,110 @@
         <div class="blocos">12</div>
     </main>
 
-    <h1 style="color: green;">6- flex flow(SHORTHAND) - atalho para as propriedades flex-direction + flex-wrap</h1>
+    <h1 style="color: green;" id="flex-flow">6- flex flow(SHORTHAND) - atalho para as propriedades flex-direction + flex-wrap</h1>
 
     <h2>flex flow: row nowrap</h2>
     <main class="container" style=" height: 500px; flex-flow: column nowrap">
         <div class="blocos" style="background-color: blueviolet;">1</div>
         <div class="blocos" style="background-color: brown;">2</div>
         <div class="blocos" style="background-color: blanchedalmond;">3</div>
+    </main>
+
+    <h1 id="align-content">7- Align Contents</h1>
+    <h2>align contents: center</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: center;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
+    </main>
+
+    <h2>align contents: flex-start</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: flex-start;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
+    </main>
+
+    <h2>align contents: flex-end</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: flex-end;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
+    </main>
+
+    <h2>align contents: space-between</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: space-between;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
+    </main>
+
+    <h2>align contents: space-around</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: space-around;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
+    </main>
+
+    <h2>align contents: space-evenly</h2>
+    <main class="container" style=" height: 500px;flex-wrap: wrap; align-content: space-evenly;">
+        <div class="blocos">1</div>
+        <div class="blocos">2</div>
+        <div class="blocos">3</div>
+        <div class="blocos">4</div>
+        <div class="blocos">5</div>
+        <div class="blocos">6</div>
+        <div class="blocos">7</div>
+        <div class="blocos">8</div>
+        <div class="blocos">9</div>
+        <div class="blocos">10</div>
+        <div class="blocos">11</div>
+        <div class="blocos">12</div>
     </main>
 
 </body>

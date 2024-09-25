@@ -25,6 +25,36 @@ h2 {
     padding-bottom: 5px;
 }
 
+.menu-navegacao {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: burlywood;
+}
+  
+.menu-navegacao ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+  
+.menu-navegacao li {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-navegacao a:hover{
+    background-color: cyan;
+    padding: 13px;
+    border-radius:15px;
+}
+
 hr {
     margin: 15px;
 }
